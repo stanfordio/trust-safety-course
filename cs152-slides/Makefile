@@ -1,8 +1,6 @@
-DOC=presentation
-FILES=$(DOC).tex
 
-pdf: $(FILES) clean
-	latexmk -pdflatex=lualatex -pdf $(DOC).tex
+all: $(wildcard *.tex)
+		latexmk -pdflatex=lualatex -pdf $?.tex ; \
 
 crunch:
 	mkdir -p img-orig
