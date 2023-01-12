@@ -1,6 +1,6 @@
 
-all: $(wildcard *.tex)
-		latexmk -pdflatex=lualatex -pdf $?.tex ; \
+all: $(wildcard ??_*.tex)
+		latexmk -pdflatex=lualatex -pdf $? ; \
 
 crunch:
 	mkdir -p img-orig
