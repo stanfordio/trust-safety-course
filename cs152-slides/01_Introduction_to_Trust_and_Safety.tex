@@ -14,7 +14,7 @@
     \setbeamertemplate{navigation symbols}{}
 }
 
-\title[An Introduction to Trust and Safety}
+\title{An Introduction to Trust and Safety}
 \subtitle{CS 152 - Lecture 1}
 
 \author[A. Stamos]{Alex Stamos}
@@ -36,13 +36,165 @@
 
 \section{What is Trust and Safety?}
 
-\begin{frame}{The topic at hand}
+\begin{frame}{What will we learn today?}
+    Today, we will...
     \begin{itemize}
-        \item One
-        \item Two
-        \item Three
+        \item Discuss the practical aspects of this class
+        \item Explore how Trust and Safety differs from other areas of tech risk
+        \item Start to understand the Trust and Safety lifecycle
     \end{itemize}
 \end{frame}
+
+\begin{frame}{TODO}
+%Teaching Team slide - not sure how to implement
+\end{frame}
+
+\begin{frame}{Our Agenda}
+    %todo: make this cleaner to look at
+    \begin{columns}
+        \column{0.5\textwidth}
+                    \footnotesize
+                    Mon, Jan 3 - Introduction to Trust and Safety \newline
+                    Wed, Jan 5 - How Tech Companies Work. Designing for Trust, Safety and Privacy \newline
+                    Mon, Jan 10 - Authentication and Identity \newline
+                    Wed, Jan 12 - Guest Lecture: Fraud \newline
+                    Mon, Jan 17 - HOLIDAY \newline
+                    Wed, Jan 19 - Spam, Fraud and Cybercrime \newline
+                    Mon, Jan 24 - Surveillance, Government Oppression and Domestic Abuse \newline
+                    Wed, Jan 27 - Harassment, Bullying and Threatening Behavior \newline
+                    Mon, Jan 31 - Hate Speech and Extremism  \newline
+                    Wed, Feb 2 - Incitement and Terrorism \newline
+                    Mon, Feb 7 - Suicide and Self-Harm \newline
+                    Wed, Feb 9 - Child and Adult Sexual Exploitation I - CSAM, NCII and Responses \newline
+            \column{0.5\textwidth}
+                    \footnotesize
+                    Mon, Feb 14 - Child and Adult Sexual Exploitation II - Grooming, Sextortion and Trafficking \newline
+                    Wed, Feb 16 - Working with Law Enforcement and CSE Case Studies \newline
+                    Mon, Feb 21 - HOLIDAY \newline
+                    Wed, Feb 23 - Misinformation and Disinformation \newline
+                    Mon, Feb 28 - Case Study: The 2016 and 2020 US Elections \newline
+                    Wed, Mar 2 - Guest Lecture: TBD \newline
+                    Mon, Mar 7 - Content Moderation and Resiliency \newline 
+                    Wed, Mar 9 - Sharing Economy, Emerging Issues and Career Advice \newline
+                    Mar 14-18 - Final Presentations, To Be Scheduled \newline
+        \end{columns}
+\end{frame}
+
+\begin{frame}{Who should take this class?}
+    Students who:
+    \begin{enumerate}
+        \item Are interested in the ways technology can be abused to cause harm
+        \item Want to build consumer internet products more safely
+        \item Who are interested in careers in Trust and Safety, anti-abuse NGOs, law enforcement or internet policy
+        \item Who can participate in the group project at a 106B level
+    \end{enumerate}
+
+    We now have a partner class, POLISCI 243C: The Politics of Internet Abuse
+\end{frame}
+
+\begin{frame}{Project Teams + Sections}
+    %TODO: fix line spacing for bullet points so it all actually fits on the slide
+    Project teams
+    \begin{itemize}
+        \item Teams of four CS students, one POLISCI
+        \item Class intro form will be sent out tomorrow on Ed
+        \begin{itemize}
+            \item Denote whether you want to be matched into a group OR state your group
+        \end{itemize}
+        \item Fill those out by Friday at noon - teams will be announced shortly after
+    \end{itemize}
+    
+    Sections will start next week
+    \begin{itemize}
+        \item TA facilitated work sessions
+        \item Optional, but highly encouraged 
+        \item Starting week 2 - times being finalized (check syllabus + Discord)
+        \item You do not have to officially sign up, but your whole group should be able to attend together
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Grading}
+    Course Grading
+    \begin{itemize}
+        \item Lecture participation and pre-lecture quizzes - 30\%
+        \item Project Milestone 1 - 20\%
+        \item Project Milestone 2 - 20\%
+        \item Project - Final presentation - 30\% \newline
+    \end{itemize}
+    
+    Final Project
+    \begin{itemize}
+        \item Milestone 1: User Studies and Reporting Flow Design (20\%) [Due 2/4]
+        \item Milestone 2: Content Moderation App Implementation (20\%) [Due 2/25]
+        \item Final:  Incident Response and Final Preso (30\%) [Due 3/11]
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Pre-Reading}
+    Pre-reads and short reading quizzes before \bfseries every \mdseries class
+    \begin{itemize}
+        \item Pre-reads will go up a week in advance
+        \item Quizzes will go up after previous class
+    \end{itemize}
+    Readings can be found here %TODO insert hyperlink from slide https://docs.google.com/document/d/1ljWErgPIRi3ZH4I_iuqqlWF8bERIiDPdakzyjxUccPo/edit
+\end{frame}
+
+\begin{frame}{Attendance Policy}
+    \begin{itemize}
+        \item Students are welcome to take the class for credit, even if they can't attend the lectures synchronously. I will not boot you out for non-attendance, but I also will not make any grading exceptions.
+        \item 30\% of your grade will come from class participation. Half from synchronous attendance quizzes that will only be available at the start of the lecture (and gaming this would be an Honor Code violation) and half from asynchronous quizzes on the pre-reads.
+        \item This means that a student who attends zero lectures can get a max of 85\% in the class. That's a B. 
+        \item \bfseries I strongly suggest that students who can't make most of the lectures take the class C/NC. \mdseries
+        If you take the asynchronous quizzes and your team completes the project, there is really no chance you won't pass (>60\%).
+    \end{itemize}
+\end{frame}
+%TODO learning goals slide - should this also be one of the clickable sections on the left?
+%TODO: put in the 5 slides with images/video + text caption
+
+\begin{frame}{Dealing with difficult content}
+    \footnotesize
+    The subject matter of this course can be difficult intellectually and emotionally.  We will read about and discuss difficult topics, including (but not limited to) sexual exploitation of adults and minors, harassment, bullying, hate speech, domestic abuse, terrorism, and more. \newline 
+    If you anticipate acute distress as a result of encountering a particular topic, talk to me ahead of time to arrange an alternative written assignment in lieu of your in-class participation. If you become so distressed that you need to leave during class, feel free to do so. If you need to leave a class, talk to me afterward and we can arrange an alternate assignment.  I will not “warn” students about particular topics, because sensitivity to different topics varies from person to person, and because topics may arise unexpectedly in class discussion. Please refer to the course agenda to see the list of course topics. \newline
+    Additionally, as you may know, there is a difference between being triggered (in the sense of post-traumatic stress disorder) and feeling uncomfortable. One of the goals of this class is to help students develop empathy for victims of online abuse. Feeling uncomfortable (and sometimes even angry or offended) is part of intellectual growth. Feeling triggered or psychologically traumatized is not. Please take care of yourselves and each other, and let me know if I can do anything at all to help.
+\end{frame}
+
+\begin{frame}{An example of difficult content from a previous project}
+    %TODO image of edge cases and outliers
+\end{frame}
+
+%TODO What is Trust and Safety Engineering? slide and maybe clickable section
+
+\begin{frame}{Unique Aspects of Trust and Safety}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \begin{enumerate}
+                \item The study of how people abuse the internet to cause harm.
+                \item Often using products the way they are designed to work.
+                \item Crosses between specialties. Requires understanding of society and humanity.
+                \item Is dynamic and unpredictable. 
+            \end{enumerate}
+    %TODO: two images - broken bridge and chess pieces –– hopefully that fixes the atrocious text column placement
+    \end{columns}
+\end{frame}
+
+%TODO: 3 slides with diagrams made in Slides
+
+\begin{frame}{The Biggest Challenges in Trust and Safety}
+    %TODO insert image on left of slide
+    \begin{enumerate}
+        \item Scale
+        \item Non-diverse studies and solutions
+        \item Measurement and definition challenges
+        \item Privacy vs Safety
+        \item Information sharing and division of responsibility
+        \item Government vs private action
+        \item Fairness in ML solutions
+        \item Freedom of expression
+    \end{enumerate}
+\end{frame}
+
+%TODO: Who are the Players? slide + clickable section on side?
+
 
 \section{Section 2}
 
