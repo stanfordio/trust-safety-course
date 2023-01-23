@@ -1,6 +1,7 @@
 
 all: $(wildcard ??_*.tex)
-		latexmk -pdflatex=lualatex -pdf $? ; \
+		latexmk -pdflatex=lualatex -pdf $?
+		mv *.pdf pdf/
 
 crunch:
 	mkdir -p img-orig
@@ -12,7 +13,7 @@ uncrunch:
 	rm -rf img-orig
 
 clean:
-	-rm -f *.pdf *.tmp *.out *.aux *.idx *.log *.ilg *.xref *.lg \
+	-rm -f *.pdf pdf/*.pdf *.tmp *.out *.aux *.idx *.log *.ilg *.xref *.lg \
          *.toc *.ind *.4og *.4ct *.4tc *.idv *.lot *.lov *.lltr *.lstr \
          *.dvi *.odt *.rtf *.html *.snm *.nav *.fls tex4ht.env \
 		 *.fdb_latexmk *.upa *.synctex* > /dev/null 2>&1
