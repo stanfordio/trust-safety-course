@@ -275,3 +275,5 @@ TSWLatexianTemp*
 # Makeindex log files
 *.lpz
 cs152-slides/presentation.pdf
+*.pdf
+*.pdf
