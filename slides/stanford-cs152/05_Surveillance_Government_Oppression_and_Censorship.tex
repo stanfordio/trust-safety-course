@@ -1,0 +1,279 @@
+%! TEX program = LuaTeX
+
+\documentclass[nobackground,dvipsnames,table]{beamer}
+\usepackage{sio}
+
+\mode<presentation>
+{\usetheme{Hannover}
+    \usecolortheme{sio}
+    \setbeamercovered{transparent}
+    \useinnertheme[shadow=false]{rounded}
+    \usebackgroundtemplate{}
+    \setbeamercolor*{frametitle}{parent=palette primary}
+    \setbeamerfont{block title}{size={}}
+    \setbeamertemplate{navigation symbols}{}
+}
+
+\title{Surveillance and Censorship}
+\subtitle{CS 152 - Trust and Safety Engineering}
+
+\author[A. Stamos]{Alex Stamos}
+\institute[SIO]{\large Stanford Internet Observatory}
+\date[2022]{\today}
+\subject{CS 152 - Trust and Safety Engineering}
+\titlegraphic{\includegraphics[width=5cm]{img/internet-observatory}}
+
+% Change the level of bulleting on the ToC page
+\setcounter{tocdepth}{2}
+
+\graphicspath{{imgs/lesson05}}
+
+\begin{document}
+
+\coverpage
+
+\begin{frame}
+    \titlepage
+\end{frame}
+%TODO sections
+\begin{frame}{}%TODO2 red slide
+    \centering
+    Word of the Day:\\
+    letmein
+\end{frame}
+
+\begin{frame}{Ahmed Mansoor}
+    %TODO Ahmed Mansoor ISHR image
+    \textit{International Service for Human Rights}
+\end{frame}
+
+\begin{frame}{The UAE Had Help From Democractic Countries...}
+    %TODO3 diagram
+\end{frame}
+
+\begin{frame}{Mansoor Remains Imprisoned in Solitary Confinement}
+    %TODO HRW headline Mansoor
+    \centering
+    \textit{“The UAE’s persecution of Ahmed Mansoor for his ‘thought crimes’ has been cruel, even gratuitous. International sporting and cultural events...cannot mask the terrible spectacle of the country’s leading rights defender alone in a bare cell in inhumane conditions.”\\
+    
+    \small{Human Rights Watch, 2020}}
+\end{frame}
+
+\begin{frame}{What Will We Learn Today?}
+    \begin{itemize}
+        \item The difference between the idealized version of the internet and reality of its physical implementation
+        \item The ways governments get access to data
+        \item How internet censorship works
+        \item How these techniques can sometimes be used by domestic abusers
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{}%TODO2 Red slide
+    The Internet: Myth vs. Reality
+\end{frame}
+
+\begin{frame}{The Internet Has Always Had an Anarchist Streak}
+    \begin{columns}
+        \column{0.2\textwidth}
+            %TODO Castro's Cuba Time image
+        \column{0.8\textwidth}
+            That nation is about to get even bigger as the major commercial computer networks - Prodigy, CompuServe, America Online, GEnie and Delphi Internet Service - begin to dismantle the walls that have separated their private operations from the public Internet. The success of the Internet is a matter of frustration to the owners of the commercial networks, who have tried all sorts of marketing tricks and still count fewer than 5 million subscribers among them. Most commercial networks now allow electronic mail to pass between their services and the Internet. Delphi, which was purchased by Rupert Murdoch's News Corp. in September, began providing its customers full Internet access earlier this year. America Online (which publishes an electronic version of TIME) is scheduled to begin offering limited Internet services later this month.\\~\\
+            
+            People who uses these new entry points into the Net may be in for a shock. Unlike the family-oriented commercial services, which censor messages they find offensive, the Internet imposes no restrictions. Anybody can start a discussion on any topic and say anything. There have been sporadic attempts by local network managers to crack down on the raunchier discussion groups, but as Internet pioneer John Gilmore puts it, \textbf{"The Net interprets censorship as damage and routes around it."}\\~\\
+            
+            -Time Magazine, “First Nation in Cyberspace”, 6DEC1993
+    \end{columns}
+\end{frame}
+
+\begin{frame}{"If you want to liberate a society, all you need is the Internet." - \textbf{Wael Ghonim}}
+    %TODO image of protests on square
+\end{frame}
+
+\begin{frame}{Technology to Organize and Protest?}
+    %TODO image percent of population using internet
+\end{frame}
+
+\begin{frame}{The Anarchist Ideal Conflicts with the Centralized Reality}
+    %TODO map of internet cables
+\end{frame}
+
+\begin{frame}{“I once said, if you want to liberate a society, all you need is the Internet. I was wrong.” - Wael Ghonim}
+    \begin{columns}
+        \column{0.5\textwidth}
+            %TODO Egypt Tracking via Apps
+        \column{0.5\textwidth}
+            %TODO riskiq namecheap check image
+            \href{Check Point Research}{https://research.checkpoint.com/2019/the-eye-on-the-nile/}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Terminology}%TODO emoji
+    \Large{Surveillance}\\
+    \textit{The act of observing persons or groups either with notice or their knowledge (overt surveillance) or without their knowledge (covert surveillance).}\\~\\
+    
+    \Large{Censorship}\\
+    \textit{The suppression of words, images, or ideas that are “offensive” whenever some succeed in imposing their personal political or moral values on others. Censorship by the government is unconstitutional.}
+
+    \scriptsize
+    \href{Cornell Law, }{https://www.law.cornell.edu/wex/surveillance}\href{ACLU}{https://www.aclu.org/other/what-censorship}
+\end{frame}
+
+\begin{frame}{Categories of Government Surveillance}
+    \begin{itemize}
+        \item Legal requests to providers
+        \item Targeted attacks
+        \item Mass sniffing
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{}%TODO2 red slide
+    Legal Requests
+\end{frame}
+
+\begin{frame}{}
+    \thispagestyle{empty}
+    %TODO 4th Amendment photo
+\end{frame}
+
+\begin{frame}{The Fourth Amendment}
+    “The right of the people to be secure in their  persons,  houses,  papers,  and effects,  against  unreasonable  searches and  seizures,  shall  not  be  violated,  and no  Warrants  shall  issue,  but  upon probable  cause,  supported  by  Oath  or affirmation,  and  particularly  describing the  place  to  be  searched,  and  the persons or things to be seized.”\\
+    \small{The United States Bill of Rights}
+\end{frame}
+
+\begin{frame}{Key US Laws}
+    \begin{itemize}
+        \item In 1968, after \textit{Berger} and \textif{Katz}, Congress passed original Wiretap Act
+        \begin{itemize}
+            \item Enacted as Title III of the Omnibus Crime Control and Safe Streets Act of 1968
+        \end{itemize}
+        
+        \item In 1986, Congress passed ECPA
+        \begin{itemize}
+            \item Amended the Wiretap Act (now Title I of ECPA) -- extended it to include transmissions of electronic data via computers. 18 U.S.C. § 2510 \textit{et seq.}
+            \item Added the Stored Communications Act (Title II of ECPA) -- applies to stored electronic communications. 18 U.S.C. § 2701 \textit{et seq.}
+            \item Added the Pen Register Statute (Title III of ECPA). 18 U.S.C. § 3121 \textit{et seq.}
+        \end{itemize}
+
+        \item Remember: 4A is a \textit{floor}; Congress can and does pass laws that provide \textit{more} protection than the courts say the 4A provides.
+    \end{itemize}
+    %TODO 80s computer image?
+\end{frame}
+
+\begin{frame}{ECPA Definitions}
+    \textbf{Contents: "substance, purport, or meaning"} of the communication
+    \begin{itemize}
+        \item What the communication means, conveys, says
+        \item Example: subject line + body of an email (or contents of a snail-mail letter)\\~\\
+    \end{itemize}
+
+    \textbf{Non-content} information = information \textbf{about} the communication
+    \begin{itemize}
+        \item "Metadata"
+        \item Think: header of an email (or the outside of the envelope the letter is sealed in)\\~\\
+    \end{itemize}
+    
+    Content/non-content distinction becomes really blurry in the context of the Internet
+    \begin{itemize}
+        \item Internet's complex architecture means one particular unit of data might change status (from content to non-content, or vice versa) as it travels from sender to recipient
+        \item Content or non-content status might also depend on where in the network that unit of data resides at that particular moment in time
+        \item We no longer live in the world of \textit{Katz} and \textit{Smight} -- hence calls for reforming ECPA
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{SCA: Who + What + How}
+    %TODO SCA table
+    \tiny
+    Source: adapted from Perkins Cole
+\end{frame}
+
+\begin{frame}{}
+    \thispagestyle{empty}
+    %TODO Facebook Twitter withholding evidence of innocence
+\end{frame}
+
+\begin{frame}{FISA and FAA}
+    %TODO nixon resignation address
+\end{frame}
+
+\begin{frame}{FISA and FAA}
+    %TODO FISA and FAA flowchart
+    \tiny
+    \url{https://www.thirdway.org/report/guide-to-section-702-reform}
+\end{frame}
+
+\begin{frame}{How About Outside of the US?}
+    %TODO government data requests graph
+    \tiny
+    \url{https://transparency.facebook.com/government-data-requests}
+\end{frame}
+
+\begin{frame}{}%TODO2 red slide
+    Targeted Surveillance
+\end{frame}
+
+\begin{frame}{A Controversial TOR Takedown: Playpen}
+    %TODO 2 images of Playpen news
+\end{frame}
+
+\begin{frame}{Commercial Hacking}
+    \begin{columns}
+        \column{0.8\textwidth}
+            %TODO PSS commercial hacking
+        \column{0.2\textwidth}
+            %TODO TESTBOT1 Image
+    \end{columns}
+    \tiny
+    \url{https://citizenlab.ca/2017/12/champing-cyberbit-ethiopian-dissidents-targeted-commercial-spyware/}
+\end{frame}
+
+\begin{frame}{Surveillance and Malware Meet: NSO Group}
+    %TODO suspected pegasus infections
+\end{frame}
+
+\begin{frame}{WhatsApp vs. NSO Group}
+    \begin{columns}
+        \column{0.4\textwidth}
+            %TODO whatsapp vs nso lawsuit
+        \column{0.6\textwidth}
+            %TODO NSO group linkedin rant
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Anybody Can Be a Target}
+    \begin{columns}
+        \column{0.7\textwidth}
+            %TODO Project Cato summary
+        \column{0.3\textwidth}
+            %TODO project cato photos
+    \end{columns}
+\end{frame}
+
+\begin{frame}{}%TODO2 Red Slide
+    Mass Surveillance
+\end{frame}
+
+\begin{frame}{}
+    %TODO prism slide 1
+\end{frame}
+
+\begin{frame}{}
+    %TODO prism slide 2
+\end{frame}
+
+\begin{frame}{}
+    %TODO data tapping closet thing
+\end{frame}
+
+\begin{frame}{}
+    %TODO Prism Yahoo Webmessenger
+\end{frame}
+
+\begin{frame}{}%TODO2 red slide
+    Censorship
+\end{frame}
+
+
+
+\backpage
+
+\end{document}
