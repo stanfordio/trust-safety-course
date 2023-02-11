@@ -1,11 +1,11 @@
 %! TEX program = LuaTeX
 
 \documentclass[nobackground,dvipsnames,table]{beamer}
-\usepackage{sio}
+\usepackage{cs152}
 
 \mode<presentation>
 {\usetheme{Hannover}
-    \usecolortheme{sio}
+    \usecolortheme{cs152}
     \setbeamercovered{transparent}
     \useinnertheme[shadow=false]{rounded}
     \usebackgroundtemplate{}
@@ -36,12 +36,7 @@
     \titlepage
 \end{frame}
 
-%TODO clickable sections
-
-\begin{frame}{}
-    \thispagestyle{empty}
-    Word of the Day: qwerty
-\end{frame}
+\section{Word of the Day: qwerty}
 
 \begin{frame}{What Will You Learn Today?}
     \begin{itemize}
@@ -52,52 +47,47 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{}
-    \thispagestyle{empty}
-    Measurement
-\end{frame}
+\section{Measurement}
 
-%TODO remove "figure" from caption
-%TODO center captions above images
-%TODO replace captions with normal text?
 \begin{frame}{Need for Measuring Badness}
+    \centering
     Without proper measurement, abuse fighting is shooting in the dark. \\~\\
-    \begin{columns}
+    \begin{columns}[T]
+        \small
         \column{0.3\textwidth}
+            \centering
+            Evaluate the size of badness.\\
             \begin{figure}
-                \centering
-                \caption{Evaluate the size of badness.}
                 \includegraphics[width=0.75\textwidth]{size-of-badness}
             \end{figure}
         \column{0.3\textwidth}
+            \centering
+            Evaluate the efficiency of badness fighting.\\
             \begin{figure}
-                \centering
-                \caption{Evaluate the efficiency of badness fighting.}
                 \includegraphics[width=0.75\textwidth]{efficiency-of-badness-fighting}
             \end{figure}
         \column{0.3\textwidth}
+            \centering
+            Evaluate the impact of badness.\\
             \begin{figure}
-                \centering
-                \caption{Evaluate the impact of badness.}
                 \includegraphics[width=0.75\textwidth]{impact-of-badness}
             \end{figure}
-
     \end{columns}
 \end{frame}
 
 \begin{frame}{Why Should We Evaluate the Size of Badness?}
     \begin{columns}[T]
         \column{0.45\textwidth}
+            \centering
+            \small{Develop the abuse fighting strategy based on biggest abuse vectors for a product/service.}
             \begin{figure}
-                \centering
-                \caption{Develop the abuse fighting strategy based on biggest abuse vectors for a product/service.}
                 \includegraphics[width=\textwidth]{abuse-vectors}
                 \includegraphics[width=1.25\textwidth]{abuse-vectors-key}
             \end{figure}
         \column{0.55\textwidth}
+            \centering
+            \small{Reporting back to community on prevalence and actions taken.}
             \begin{figure}
-                \centering
-                \caption{Reporting back to community on prevalence and actions taken.}
                 \includegraphics[width=\textwidth]{facebook-community-reports}
             \end{figure}
     \end{columns}
@@ -113,38 +103,38 @@
 \begin{frame}{Why Should We Evaluate the Efficiency of Badness Fighting?}
     \begin{columns}[T]
         \column{0.6\textwidth}
+            \centering{Refining and adapting abuse fighting strategy based on efficiency.}
             \begin{figure}
-                \centering
-                \caption{Refining and adapting abuse fighting strategy based on efficiency.}
                 \includegraphics[width=\textwidth]{bad-ads-taken-down}
             \end{figure}
             \tiny
-            2.3 billion bad ads in 2018 for violations of both new and existing policies, including nearly 207,000 ads for ticket resellers, over 531,000 ads for bail bonds and approximately 58.8 million phishing ads. \\
+            2.3 billion bad ads in 2018 for violations of both new and existing policies, including nearly 207,000 ads for ticket resellers, over 531,000 ads for bail bonds and approximately 58.8 million phishing ads. \\~\\
 
-            Google  introduced 31 new ads policies in 2018 to address abuses in areas including third-party tech support, ticket resellers, cryptocurrency and local services such as garage door repairmen, bail bonds and addiction treatment facilities.
+            Google  introduced \textbf{31 new ads policies} in 2018 to address abuses in areas including third-party tech support, ticket resellers, cryptocurrency and local services such as garage door repairmen, bail bonds and addiction treatment facilities.
         \column{0.4\textwidth}
+            \centering
+            Building efficient and scalable ML models.\\
             \begin{figure}
-                \centering
-                \caption{Building efficient and scalable ML models.}
                 \includegraphics[width=\textwidth]{case-based-vs-naive-bayes}
             \end{figure}
     \end{columns}
 \end{frame}
 
 \begin{frame}{Why Should We Evaluate the Impact of Badness?}
-    Badness leads to poor user experience, has impact on user trust and in some cases leads to user harm.
-    \begin{columns}
+    \centering
+    Badness leads to poor user experience, has impact on user trust and in some cases leads to user harm.\\~\\
+    \begin{columns}[T]
         \column{0.5\textwidth}
+            \centering
+            \small{Human flags by flagging reason (YouTube Transparency Report)}
             \begin{figure}
-                \centering
-                \caption{Human flags by flagging reason (YouTube Transparency Report)}
                 \includegraphics[width=\textwidth]{youtube-reports}
                 \includegraphics[width=1.5\textwidth]{youtube-reports-key}
             \end{figure}
         \column{0.5\textwidth}
+            \centering
+            \small{Top user harms that results from a data breach}
             \begin{figure}
-                \centering
-                \caption{Top user harms that results from a data breach}
                 \includegraphics[width=\textwidth]{potential-harms}
             \end{figure}
     \end{columns}
@@ -153,14 +143,14 @@
 \begin{frame}{Measurement Methods}
     \begin{columns}[T]
         \column{0.5\textwidth}
-            Internal Methods \\ %TODO make bigger than bullet points
+            \Large{Internal Methods} \\
             \begin{itemize}
                 \item Collecting and measuring \\
                 \item Sampling \\
                 \item Behavioral metrics \\
             \end{itemize}
         \column{0.5\textwidth}
-            External Methods \\ %TODO make bigger than bullet points
+            \Large{External Methods} \\
             \begin{itemize}
                 \item Crawling and scraping \\
                 \item Crowdsourcing \\
@@ -170,16 +160,16 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{} %TODO link to video (using imgalt?)
+\begin{frame}{} %TODO2 make video/image cover sidebar
     \thispagestyle{empty}
-    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth]{unknown-unknowns}}
+    \href{https://www.youtube.com/watch?v=REWeBzGuzCc}{\includegraphics[width=\paperwidth]{unknown-unknowns}}
 \end{frame}
 
 \begin{frame}{False Positives and False Negatives}
     Let us take the example of a binary email spam classifier, in which each email can be either spam or not spam.
     
     \textbf{Confusion matrix}
-    \begin{tabularx}{0.8\textwidth}{|c|c|c|}%TODO make table fit on page. currently only changing the lines of the table and not adjusting text
+    \begin{tabularx}{0.8\textwidth}{|c|c|c|}%TODO2 make table fit on page. currently only changing the lines of the table and not adjusting text
         \hline
         & \textbf{Predicted: Real Email} & \textbf{Predicted: Spam Email} \\
         \hline
@@ -190,8 +180,16 @@
     \end{tabularx}
 \end{frame}
 
-\begin{frame}{Precision and Recall: a Tug of War}
-    %TODO
+\begin{frame}{Precision and Recall: a Tug of War} %TODO2 - make less cursed
+    \footnotesize
+    \textbf{Precision} = $$\frac{True Positive}{True Positive + False Positive}$$ the proportion of positive identifications that are correct\\
+    \textbf{Recall} = $$\frac{True Positive}{True Positive + False Negative}$$ the proportion of actual positives that were identified correctly\\
+    \textbf{Accuracy} = $$\frac{Number of Correct Predictions}{Total Predictions}$$ the fraction of predictions the model got right\\
+    \textbf{Prevalence} = $$\frac{False Negative}{Total}$$ the proportion of bad content that got past your system
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.75\textwidth]{spam-classification}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Problem of Long-tails}
@@ -212,7 +210,7 @@
 \end{frame}
 
 \begin{frame}{Prevalence}
-    Prevalence = \% of bad content that got past your system 
+    \textbf{Prevalence} = \% of bad content that got past your system 
 \end{frame}
 
 \begin{frame}{Measurement Summary}
@@ -221,45 +219,44 @@
     
     \textit{You get what you measure.} \\~\\
     
-    \textit{The thing that you measure will get gamed.”} \\
+    \textit{The thing that you measure will get gamed.”} \\~\\
           - Matt Levine, Bloomberg 
 \end{frame}
 
 \begin{frame}{Metric Perversity}
-    Metrics are supposed to help you make good decisions \\
+    Metrics are supposed to help you make good decisions
+    \vspace{0.05\textheight}
     \begin{itemize}
         \item Are your metrics respectful?
         \item Are they perverse?
         \item Will they cope with rare, important failures?
         \item Are they robust to data collection issues?
     \end{itemize}
-
-    %TODO make this larger
-    Many safety problems come from bad metrics
+    \vspace{0.1\textheight}
+    \centering
+    \large
+    \textbf{Many safety problems come from bad metrics}
 \end{frame}
 
 \begin{frame}{Using Measurements to Make Decisions}
-    %TODO best way to implement this? screenshot?
+    \includegraphics[width=\textwidth]{responsibility-vs-harm}
 \end{frame}
 
 \begin{frame}{Prioritization in Trust and Safety}
     \centering
-    The \textbf{level} of harm associated with an area of abuse
-    +
-    The \textbf{prevalence} of the abuse 
-    +
-    The product’s \textbf{responsibility} for enabling such abuse
-    =
-    Prioritization %TODO make this bigger than the rest
+    The \textbf{level} of harm associated with an area of abuse\\~\\
+    +\\~\\
+    The \textbf{prevalence} of the abuse\\~\\
+    +\\~\\
+    The product’s \textbf{responsibility} for enabling such abuse\\~\\
+    =\\~\\
+    \large{Prioritization}
 \end{frame}
 
-\begin{frame}{}
-    \thispagestyle{empty}
-    Activity
-\end{frame}
+\section{Activity}
 
 \begin{frame}{ACTIVITY - Sort Badness}
-    \begin{columns}
+    \begin{columns}[T]
         \column{0.4\textwidth}
             \begin{enumerate}
                 \item Hateful comments on a blog posts
@@ -269,26 +266,26 @@
                 \item Offensive words on reviews of Apps on a mobile store.
             \end{enumerate}
         \column{0.6\textwidth}
-            Based on your understanding of the abuse types listed on the left, place them on the matrix below 
-        %TODO Matrix
+            \vspace{0.025\textheight}
+            \small{Based on your understanding of the abuse types listed on the left, place them on the matrix below}
+            \vspace{0.12\textheight}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{sort-badness}
+            \end{figure}
     \end{columns}
 \end{frame}
 
-\begin{frame}{}
-    \thispagestyle{empty}
-    Tradeoffs
+\section{Tradeoffs}
+
+\begin{frame}{The Iron Triangle of Engineering}
+    \centering
+    \includegraphics[height=0.9\textheight]{iron-triangle}
 \end{frame}
 
-\begin{frame}{}
-    \thispagestyle{empty}
-    %The Iron Triangle of Engineering
-    %iron-triangle
-\end{frame}
-
-\begin{frame}{}
-    \thispagestyle{empty}
-    %The Stamos Tridecagram of Difficult Tradeoffs
-    %tridecagram
+\begin{frame}{The Stamos Tridecagram of Difficult Tradeoffs}
+    \centering
+    \includegraphics[width=\textwidth]{tridecagram.png}
 \end{frame}
 
 \begin{frame}{Inherent Tradeoffs}

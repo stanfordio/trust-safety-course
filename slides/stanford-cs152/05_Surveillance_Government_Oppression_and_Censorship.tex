@@ -1,11 +1,11 @@
 %! TEX program = LuaTeX
 
 \documentclass[nobackground,dvipsnames,table]{beamer}
-\usepackage{sio}
+\usepackage{cs152}
 
 \mode<presentation>
 {\usetheme{Hannover}
-    \usecolortheme{sio}
+    \usecolortheme{cs152}
     \setbeamercovered{transparent}
     \useinnertheme[shadow=false]{rounded}
     \usebackgroundtemplate{}
@@ -36,7 +36,8 @@
     \titlepage
 \end{frame}
 %TODO sections
-\begin{frame}{}%TODO2 red slide
+\begin{frame}{}%TODO2 red slidez    
+
     \centering
     Word of the Day:\\
     letmein
@@ -54,9 +55,9 @@
 \begin{frame}{Mansoor Remains Imprisoned in Solitary Confinement}
     %TODO HRW headline Mansoor
     \centering
-    \textit{“The UAE’s persecution of Ahmed Mansoor for his ‘thought crimes’ has been cruel, even gratuitous. International sporting and cultural events...cannot mask the terrible spectacle of the country’s leading rights defender alone in a bare cell in inhumane conditions.”\\
+    \textit{“The UAE’s persecution of Ahmed Mansoor for his ‘thought crimes’ has been cruel, even gratuitous. International sporting and cultural events...cannot mask the terrible spectacle of the country’s leading rights defender alone in a bare cell in inhumane conditions.”}\\
     
-    \small{Human Rights Watch, 2020}}
+    \small{\textit{Human Rights Watch, 2020}}
 \end{frame}
 
 \begin{frame}{What Will We Learn Today?}
@@ -142,7 +143,7 @@
 
 \begin{frame}{Key US Laws}
     \begin{itemize}
-        \item In 1968, after \textit{Berger} and \textif{Katz}, Congress passed original Wiretap Act
+        \item In 1968, after \textit{Berger} and \textit{Katz}, Congress passed original Wiretap Act
         \begin{itemize}
             \item Enacted as Title III of the Omnibus Crime Control and Safe Streets Act of 1968
         \end{itemize}
@@ -272,7 +273,225 @@
     Censorship
 \end{frame}
 
+\begin{frame}{There Are Also Countries With Excellent Blocking Capabilities}
+    %TODO3 diagram of china
+\end{frame}
 
+\begin{frame}{How Do Countries Block?}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \begin{enumerate}
+                \item By DNS name
+                \begin{enumerate}
+                    \item Defeated by alternative DNS, VPN
+                \end{enumerate}
+        
+                \item By IP address
+                \begin{enumerate}
+                    \item Defeated by domain fronting, cloud CDNs, VPN
+                \end{enumerate}
+        
+                \item By SNI sniffing
+                \begin{enumerate}
+                    \item Addressed by TLS 1.3, VPN
+                \end{enumerate}
+        
+                \item Full Internet shutdowns
+            \end{enumerate}
+        \column{0.5\textwidth}
+        %TODO iran internet shutdown
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Internet Shutdowns Are on the Rise}
+    In 2019, the \#KeepItOn Coalition recorded \textbf{213 incidents} of Internet Shutdowns across \textbf{33 countries.} 
+    \begin{columns}
+        \column{0.5\textwidth}
+            %TODO 2 images; uganda internet shutdown + guinea election tweet
+        \column{0.5\textwidth}
+            %TODO Justifications for shutdowns images
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Surveillance/Censorship Capabilities by Country Category}
+    \footnotesize %TODO table
+    \begin{tabularx}{\textwidth}{|X|X|X|X|}
+        \hline
+        \textbf{Country Category} & \textbf{Surveillance Capabilities} & \textbf{Censorship Capabilities} & \textbf{Possible Constraints}\\
+        Highly-capable democracies & Custom malware Tapping of internet backbones Voluntary disclosure of corporate data Compelled disclosure of corporate data Intelligence sharing & Expansion of private power->control by big companies such as Facebook and Twitter. Not illegal, but problematic. & Legal action Administrative procedures\\
+        \hline
+        \hline
+        Highly-capable autocracies & Custom malware Quasi-state hackers Compelled disclosure of corporate data (sometimes) Voluntary disclosure of corporate data (rarely) Insider data access abuse & Deep-packet inspection ML-based blocking inside of platforms & Limits on data collection Export controls\\
+        \hline
+        Less-capable states & Commercial spyware Arrest / compelled disclosure of personal data Voluntary disclosure of corporate data (sometimes) & Social media blocking (DNS/IP) Internet throttling/shutdowns & Malware detection Export controls\\
+        \hline
+    \end{tabularx}
+\end{frame}
+
+\begin{frame}{Domestic Surveillance}
+    \textit{Or where we start making you paranoid….}
+    %TODO Americans movie poster
+\end{frame}
+
+\begin{frame}{Domestic Abusers Are the Hardest Adversary}
+    \begin{columns}
+        \column{0.6\textwidth}
+            \begin{enumerate}
+                \item Often unlimited physical access to devices
+                \begin{enumerate}
+                    \item Phones
+                    \item Computers
+                    \item Household IoT
+                \end{enumerate}
+                \item Shared passwords and emails
+                \item Integrated into the victim’s social network
+                \item Knowledge of all password reset questions
+                \item Other forms of legal/financial leverage
+            \end{enumerate}
+        \column{0.4\textwidth}
+            %TODO security camera footage
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Possible Response: The "Break Up" Flow}
+    %TODO Facebook 
+\end{frame}
+
+\begin{frame}{"Legitimate" Spyware}
+    \begin{columns}
+        \column{0.5\textwidth}
+            OK Use:
+            \begin{itemize}
+                \item Transparently installing apps on your child’s phone so you know where they are
+                \item Installing software to find your device if it is lost or stolen
+                \item Consensual on both sides
+            \end{itemize}
+        \column{0.5\textwidth}
+            Not OK Use:
+            \begin{itemize}
+                \item Covertly installing apps on your intimate partner’s phone so you know where they are
+                \item Exploiting shared passwords to view private communications
+            \end{itemize}
+    \end{columns}
+    %TODO kidguard find my phone spyzie mspy
+\end{frame}
+
+\begin{frame}{Smart Home: Convenience or Abuse?}
+    %TODO smart home image
+\end{frame}
+
+\begin{frame}{Apple Made Stalking Tools Pretty With a Better UX}
+    \begin{columns}
+        \column{0.4\textwidth}
+            %TODO Apple Stalking Headline
+        \column{0.6\textwidth}
+            %TODO Aplle Stalking Article
+    \end{columns}
+\end{frame}
+
+\begin{frame}{}%TODO2 Red slide
+    Responses and Mitigations
+\end{frame}
+
+\begin{frame}{Policy Responses}
+    \begin{enumerate}
+        \item Minimize data collection.
+        \item Create clear, human-rights based policies on government data access.
+        \item Publish Transparency Reports on Government Data Access.
+        \item Protect users especially vulnerable to surveillance.
+        \item Provide digital security training and resources for vulnerable groups.
+        \item Take a stand against stalkerware.
+        \item Restrict employee access to private data.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Public: Wassenaar and Other Attempts to Regulate Spyware}
+    \textbf{1996 Wassennaar Arrangement} - the first global multilateral arrangement on export controls for conventional weapons and sensitive dual-use goods and technologies. \textbf{Revised in 2013 to include internet-based surveillance systems.}\\
+    \footnotesize
+    \href{wassenaar.org}{https://www.wassenaar.org/the-wassenaar-arrangement/}
+    \begin{columns}
+        \column{0.5\textwidth}
+            %TODO wassenaar arrengments
+        \column{0.5\textwidth}
+            %TODO wassenaar signatories
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Restricts Sale and Distribution of Surveillance Tools to Oppressive Regimes}
+    %TODO Wassenaar Licensing Factors
+\end{frame}
+
+\begin{frame}{Unintended Consequences of the Wassenaar Arrangement}
+    %TODO Wired Wassenaar
+    \begin{itemize}
+        \item Rules so broad could criminalize some research, bug bounty programs, and penetration testing and restrict legitimate security tools 
+        \item Some argued the restrictions weakened security of participating nations and did little to curb threats from non-participant nations
+        \item Also hard to enforce 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Al Jazeera Investigation Shows Spyware Firms Breach Agreements}
+    %TODO embed video link
+\end{frame}
+
+\begin{frame}{Private Action: WhatsApp vs. NSO }
+    %TODO whatsapp vs NSO techcrunch
+\end{frame}
+
+\begin{frame}{Product/Technical Responses}
+    \begin{enumerate}
+        \item Expand the use of encryption to protect user data
+        \item Build in Malware Detection Mechanisms
+        \item Build Account Takeover Detection Mechanisms
+        \item Consider the needs of abused individuals in your product design
+    \end{enumerate}
+\end{frame}
+
+%TODO3 are these slides in the right place
+\begin{frame}{One of the Solutions Has Been the VPN}
+    
+\end{frame}
+
+\begin{frame}{Enter The Onion Router}
+    
+\end{frame}
+
+\begin{frame}{How Does Tor Work?}
+    
+\end{frame}
+
+\begin{frame}{Weaknesses in Tor}
+    
+\end{frame}
+
+\begin{frame}{TOR Is in an Arms Race with the PRC}
+    \url{https://blog.thousandeyes.com/the-war-between-chinas-great-firewall-and-circumvention-tools/}
+\end{frame}
+
+\begin{frame}{PRC Detection of Tor}
+    
+\end{frame}
+
+\begin{frame}{.onion Services}
+    
+\end{frame}
+
+\begin{frame}{The Site That Made the Dark Web Famous:}
+    
+\end{frame}
+
+\begin{frame}{Government Attacks on E2EE}
+    
+\end{frame}
+
+\begin{frame}{Where Is This Going?}
+    \begin{itemize}
+        \item Big-country capabilities are trickling down/being sold to many nations
+        \item Targeted malware has become normalized  against journalists /activists
+        \item Recent success against stalkerware not sufficient 
+        \item New embedded tech makes domestic spying very easy
+    \end{itemize}
+\end{frame}
 
 \backpage
 
