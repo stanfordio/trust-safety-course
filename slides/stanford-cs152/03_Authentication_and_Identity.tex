@@ -18,7 +18,7 @@
 \subtitle{CS 152: Trust and Safety Engineering}
 
 \author[A. Stamos]{Alex Stamos}
-\institute[SIO]{\large Stanford Internet Observatory}
+\institute[Stanford University]{Stanford Cyber Policy Center}
 \date[2022]{\today}
 \subject{CS 152 - Trust and Safety Engineering}
 \titlegraphic{\includegraphics[width=5cm]{img/internet-observatory}}
@@ -26,7 +26,7 @@
 % Change the level of bulleting on the ToC page
 \setcounter{tocdepth}{2}
 
-\graphicspath{{/img/lesson03}}
+\graphicspath{{img/lesson03}}
 
 \begin{document}
 
@@ -36,11 +36,16 @@
     \titlepage
 \end{frame}
 
+%TODO sections
+
 \begin{frame}{Twitter Hack}
-    
+    \includegraphics[width=\textwidth]{thanks-obama}
 \end{frame}
 
-\begin{frame}{What Will You Learn Today?}
+\section{What Will You Learn Today?}
+
+\begin{frame}{What Will You Learn Today?}%TODO consistent sizing + formatting for overview pages
+    \large
     \begin{itemize}
         \item Digital identity relationships
         \item Basic and Advanced Authentication Flows
@@ -50,52 +55,75 @@
     \end{itemize}
 \end{frame}
 
+\section{Digital Identity Mappings}
+
 \begin{frame}{Digital Identity Mappings}
-    %TODO Diagram
+    \includegraphics[width=\textwidth]{digital-identity-mappings}
 \end{frame}
 
 \begin{frame}{Account <-> Real Human}
-    \begin{itemize}
-        \item Impersonating accounts
-        \item Romance scams
-        \item Advance fee fraud
-        \item Physical good fraud
-    \end{itemize}
-    %TODO photos
+    \begin{columns}
+        \column{0.5\textwidth}
+            \begin{itemize}
+                \item Impersonating accounts
+                \item Romance scams
+                \item Advance fee fraud
+                \item Physical good fraud
+            \end{itemize}
+            \vspace{0.05\textheight}
+            \includegraphics[width=\textwidth]{musk-scam-headline}
+            \includegraphics[width=\textwidth]{musk-scam-tweet}
+        \column{0.5\textwidth}
+            \includegraphics[width=\textwidth]{fake-stamos-twitter}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{User <-> Account}
-    %TODO pictures
-    \begin{itemize}
-        \item Stealing passwords
-        \item Cracked breached password databases
-        \item Credential stuffing
-        \item Malware (Trojans)
-    \end{itemize}
+    \begin{columns}
+        \column{0.6\textwidth}
+            \includegraphics[width=\textwidth]{paypal-breach}
+            \includegraphics[width=\textwidth]{hacked-paypal-accounts}
+        \column{0.4\textwidth}
+            \begin{itemize}
+                \item Stealing passwords
+                \item Cracked breached password databases
+                \item Credential stuffing
+                \item Malware (Trojans)
+            \end{itemize}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Organization <-> Infrastructure }
-    \begin{itemize}
-        \item Phishing 
-        \item Meddler-In-The Middle (MITM) attacks
-        \item Typosquatting
-        \item Mismatched domains
-        \item Internationalized Domain Name (IDN) Homograph attack
-        \item Email security
-    \end{itemize}
-    %TODO image
+    \begin{columns}
+        \column{0.45\textwidth}
+            \begin{itemize}
+                \item Phishing 
+                \item Meddler-In-The Middle (MITM) attacks
+                \item Typosquatting
+                \item Mismatched domains
+                \item Internationalized Domain Name (IDN) Homograph attack
+                \item Email security
+            \end{itemize}
+        \column{0.55\textwidth}
+            \includegraphics[width=\textwidth]{fakebook-login}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Black Markets Allow For Specialization of Effort}
-    There are:
-        \begin{itemize}
-            \item Markets for stolen data
-            \item Easy-to-use malware, like keyloggers 
-            \item Phishing kits
-            \item Hackers for hire
-            \item Botnets 
-        \end{itemize}
-%TODO images
+    \begin{columns}
+        \column{0.5\textwidth}
+            There are:
+            \begin{itemize}
+                \item Markets for stolen data
+                \item Easy-to-use malware, like keyloggers 
+                \item Phishing kits
+                \item Hackers for hire
+                \item Botnets 
+            \end{itemize}
+            \includegraphics[width=\textwidth]{hacker-for-hire}
+        \column{0.5\textwidth}
+            \includegraphics[width=\textwidth]{marry-christmas-sale}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Why Should I Care?}
@@ -103,44 +131,60 @@
     Protecting users while maintaining availability requires a complex web of systems covering Prevention, Detection, and Mitigation.
 \end{frame}
 
+\section{Authentication}
 
-%TODO2 Should I put in slides that are skipped in presentation mode?
-
-%TODO authn vs authz slide
-
-\begin{frame}{How Does Authentication Work?}
-    
+\begin{frame}{Authn vs Authz}
+    \Large
+    \textbf{Authentication (authn)} - Whether users are who they claim to be\\~\\
+    \textbf{Authorization (authz)} - What users are and aren’t allowed to access
 \end{frame}
 
 \begin{frame}{How Does Authentication Work?}
-    
+    \includegraphics[width=\textwidth]{stanford-login}
 \end{frame}
 
 \begin{frame}{How Does Authentication Work?}
-    
-\end{frame}
-
-\begin{frame}{How Does Authentication Work?}
-    
-\end{frame}
-
-\begin{frame}{Multi-factor}
-    
-\end{frame}
-
-\begin{frame}{} %Something you have, something you know, something you are
-    
+    \includegraphics[width=\textwidth]{auth}
 \end{frame}
 
 \begin{frame}{}
-    
+    \thispagestyle{empty}
+    \includegraphics[width=\paperwidth]{stanford-forgot-password}
+\end{frame}
+
+\begin{frame}{}
+    \thispagestyle{empty}
+    \includegraphics[width=\paperwidth]{stanford-id-verification}
+\end{frame}
+
+\begin{frame}{Multi-factor}
+    \includegraphics[width=\textwidth]{multifactor-auth}
+\end{frame}
+
+\begin{frame}{}
+    \centering
+    \thispagestyle{empty}
+    \includegraphics[height=\textheight]{google-2fa}
 \end{frame}
 
 \begin{frame}{Adoption of Security Measures}
-    
+    \begin{columns}
+        \column{0.7\textwidth}
+            \includegraphics[width=\textwidth]{stay-safe-online}
+            \tiny
+            Source:\\
+            Replication: No One Can Hack My Mind (Busse  et al.)\\
+            \url{https://www.usenix.org/system/files/soups2019-busse.pdf}
+        \column{0.3\textwidth}
+            <10\% 2FA of active Google accounts\\~\\
+            ~22.5\% of Americans use a password manager app (YouGov Survey 2020)
+    \end{columns}
 \end{frame}
 
+\section{Threats}
+
 \begin{frame}{Threats}
+    \Large
     \begin{itemize}
         \item Credential breach
         \item Malware
@@ -150,152 +194,126 @@
 \end{frame}
 
 \begin{frame}{Quota Inversion}
-    Initial account hijacking was just phishing \\
-    Ten failed logins per password vs ten failed logins per account\\
-    Mass market attacker who just wants to send out links to viagra just needs to get into any account - they don’t care which one\\
-
-    Different world - weaponized targeted account for a specific adversary
+    \includegraphics[width=\textwidth]{quota-inversion-1}
 \end{frame}
 
 \begin{frame}{Quota Inversion}
-    
-\end{frame}
-
-\begin{frame}{Quota Inversion}
-    
-\end{frame}
-
-\begin{frame}{Credential Breach}
-    
-\end{frame}
-
-\begin{frame}{Likelihood of Compromise}
-    
-\end{frame}
-
-\begin{frame}{Likelihood of Compromise}
-    
+    \includegraphics[width=\textwidth]{quota-inversion-2}
 \end{frame}
 
 \begin{frame}{}
-    
+    \centering
+    \includegraphics[height=\paperheight]{have-i-been-pwned}
+\end{frame}
+
+\begin{frame}{}%TODO crop
+    \thispagestyle{empty}
+    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth]{predator13}}
 \end{frame}
 
 \begin{frame}{}
-    
+    %TODO 4 emails
 \end{frame}
 
-\begin{frame}{}
-    
+\begin{frame}{}%TODO
+    \thispagestyle{empty}
+    \includegraphics[width=\paperwidth]{anatomy-of-phishing-mail}
 \end{frame}
 
-\begin{frame}{}
-    
+\begin{frame}{}%TODO
+    \thispagestyle{empty}
+    \includegraphics[width=\paperwidth]{login-diagram}
 \end{frame}
 
-\begin{frame}{}
-    
+\begin{frame}{}%TODO
+    \thispagestyle{empty}
+    \includegraphics[width=\paperwidth]{login-diagram-phishing}
 \end{frame}
 
-\begin{frame}{}
-    
+\begin{frame}{}%TODO
+    \thispagestyle{empty}
+    \includegraphics[width=\paperwidth]{bad-link-browser}
 \end{frame}
 
-\begin{frame}{}
-    
+\begin{frame}{}%TODO2 fix
+    \thispagestyle{empty}
+    \includegraphics[height=\paperheight]{bad-link-mobile}
 \end{frame}
 
-\begin{frame}{}
-    
+\begin{frame}{}%TODO2 fix - AtPageUpperLeft not doing what eso-pic says it does
+    \thispagestyle{empty}
+    \includegraphics[width=\paperwidth]{evilginx}
 \end{frame}
 
-\begin{frame}{}
-    
-\end{frame}
-
-\begin{frame}{}
-    
-\end{frame}
-
-\begin{frame}{}
-    
-\end{frame}
-
-\begin{frame}{}
-    
-\end{frame}
-
-\begin{frame}{}
-    
-\end{frame}
-
-\begin{frame}{}
-    
-\end{frame}
+\section{Mitigation}
 
 \begin{frame}{Mitigation}
-    Risk-based authentication challenges\\
-    Implicit signals\\
-    Strong authentication\\
+    \Large
+    Risk-based authentication challenges\\~\\
+    Implicit signals\\~\\
+    Strong authentication\\~\\
     Federation
 \end{frame}
 
 \begin{frame}{Sign-in Risk Detection}
     \begin{columns}
-        \column{0.6\textwidth}
+        \column{0.55\textwidth}
+            \small
             \begin{itemize}
                 \item Unusual location, device, time, network 
                 \item Phishing history
                 \item Similarity to known account hijacking patterns (number of login attempts, sensitivity of info accessed, etc.)
                 \item \textit{The higher the estimated probability that the login attempt is fraudulent, the more multi-factor authentication steps should be required of the user.}
             \end{itemize}
-            %TODO graphics
-        \column{0.4\textwidth}
-            %TODO image
+            \centering
+            \includegraphics[width=0.6\textwidth]{challenges}
+        \column{0.45\textwidth}
+            \includegraphics[width=\textwidth]{google-2fa}
     \end{columns}
 \end{frame}
 
 \begin{frame}{Detecting Hijacker In-session}
-    
+    \includegraphics[width=\textwidth]{detecting-hijackers-1}
 \end{frame}
 
 \begin{frame}{Detecting Hijacker In-session}
-    
+    \includegraphics[width=\textwidth]{detecting-hijackers-2}
 \end{frame}
 
 \begin{frame}{Detecting Hijacker In-session}
-    
+    \includegraphics[width=\textwidth]{detecting-hijackers-3}
 \end{frame}
 
 \begin{frame}{Detecting Hijacker In-session}
-    
+    \includegraphics[width=\textwidth]{detecting-hijackers-4}
 \end{frame}
 
 \begin{frame}{Authentication Beyond Passwords}
-    
+    \centering
+    \includegraphics[height=\textheight]{stanford-2fa}
+\end{frame}
+
+\begin{frame}{}%TODO scaling
+    \thispagestyle{empty}
+    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth]{auth-key}}
 \end{frame}
 
 \begin{frame}{}
-    
-\end{frame}
-
-\begin{frame}{}
-    
+    %TODO how to implement w/ or w/o animation
 \end{frame}
 
 \begin{frame}{Identity Federation}
-    
+    \includegraphics[width=\textwidth]{identity-federation}
 \end{frame}
 
 \begin{frame}{Identity Federation}
-    
+    %TODO2 fix arrows?
 \end{frame}
 
-\begin{frame}{}
-    
-\end{frame}
+\section{Exotic Attacks}
 
 \begin{frame}{Exotic Attacks}
+    \LARGE
     \begin{itemize}
         \item OAuth Phishing
         \item Token Theft
@@ -303,50 +321,41 @@
 \end{frame}
 
 \begin{frame}{OAuth}
-    
+    \includegraphics[width=\textwidth]{oauth}
 \end{frame}
 
-\begin{frame}{}
-    
+\begin{frame}{}%TODO HOW DO YOU CENTER THIS AAAAAAAA
+    \thispagestyle{empty}
+    \centering
+    \includegraphics[width=\textwidth]{phishy}
 \end{frame}
 
-\begin{frame}{}
-    
+\begin{frame}{}%TODO cursed alignment
+    \thispagestyle{empty}
+    \includegraphics[height=\paperheight]{google-docs-permissions}
 \end{frame}
 
 \begin{frame}{Stealing Access Tokens}
-    
+    \includegraphics[width=0.95\textwidth]{stealing-access-tokens}
 \end{frame}
 
 \begin{frame}{}
-    
+    \begin{columns}
+        \column{0.6\textwidth}
+            \includegraphics[width=\textwidth]{nso-article}
+        \column{0.4\textwidth}
+            \includegraphics[width=\textwidth]{nso-pegasus-diagram}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Risk and Incident Sharing and Coordination}
-    
+    \includegraphics[width=\textwidth]{openid}
 \end{frame}
 
 \begin{frame}{Where Is This Going?}
-    After taking over an account, what do the attackers do?\\
+    After taking over an account, what do the attackers do?\\~\\
     Over the next few weeks, we’ll cover the spectrum from simple, commercial monetization, to more nuanced forms of reputation hijacking, to data theft and weaponization
 \end{frame}
-
-\begin{frame}{Review}
-    
-\end{frame}
-
-\begin{frame}{}
-    
-\end{frame}
-
-\begin{frame}{What Will We Learn Today?}
-    
-\end{frame}
-
-\begin{frame}{Credential Breach}
-    
-\end{frame}
-
 
 \backpage
 
