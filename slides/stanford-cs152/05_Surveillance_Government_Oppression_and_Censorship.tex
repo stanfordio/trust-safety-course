@@ -26,7 +26,10 @@
 % Change the level of bulleting on the ToC page
 \setcounter{tocdepth}{2}
 
-\graphicspath{{imgs/lesson05}}
+\graphicspath{{img/lesson05}}
+
+%TODO2 CHECK ORDER OF SLIDES WITH PROFESSOR STAMOS
+%Most other todos are formatting or image/video embedding related
 
 \begin{document}
 
@@ -35,24 +38,21 @@
 \begin{frame}
     \titlepage
 \end{frame}
-%TODO sections
-\section{Word of the Day:\\letmein}
 
 \begin{frame}{Ahmed Mansoor}
-    %TODO Ahmed Mansoor ISHR image
+    \includegraphics[width=\textwidth]{free-ahmed-mansoor}
     \textit{International Service for Human Rights}
 \end{frame}
 
 \begin{frame}{The UAE Had Help From Democractic Countries...}
-    %TODO3 diagram
+    \includegraphics[width=\textwidth]{uae-help}
 \end{frame}
 
 \begin{frame}{Mansoor Remains Imprisoned in Solitary Confinement}
-    %TODO HRW headline Mansoor
     \centering
+    \includegraphics[width=\textwidth]{mansoor-health-at-risk}
     \textit{“The UAE’s persecution of Ahmed Mansoor for his ‘thought crimes’ has been cruel, even gratuitous. International sporting and cultural events...cannot mask the terrible spectacle of the country’s leading rights defender alone in a bare cell in inhumane conditions.”}\\
-    
-    \small{\textit{Human Rights Watch, 2020}}
+    \small{\textit{- Human Rights Watch, 2020}}
 \end{frame}
 
 \begin{frame}{What Will We Learn Today?}
@@ -67,10 +67,11 @@
 \section{The Internet: Myth vs. Reality}
 
 \begin{frame}{The Internet Has Always Had an Anarchist Streak}
-    \begin{columns}
+    \begin{columns}[c]
         \column{0.2\textwidth}
-            %TODO Castro's Cuba Time image
+            \includegraphics[width=\textwidth]{time-castro}
         \column{0.8\textwidth}
+            \scriptsize
             That nation is about to get even bigger as the major commercial computer networks - Prodigy, CompuServe, America Online, GEnie and Delphi Internet Service - begin to dismantle the walls that have separated their private operations from the public Internet. The success of the Internet is a matter of frustration to the owners of the commercial networks, who have tried all sorts of marketing tricks and still count fewer than 5 million subscribers among them. Most commercial networks now allow electronic mail to pass between their services and the Internet. Delphi, which was purchased by Rupert Murdoch's News Corp. in September, began providing its customers full Internet access earlier this year. America Online (which publishes an electronic version of TIME) is scheduled to begin offering limited Internet services later this month.\\~\\
             
             People who uses these new entry points into the Net may be in for a shock. Unlike the family-oriented commercial services, which censor messages they find offensive, the Internet imposes no restrictions. Anybody can start a discussion on any topic and say anything. There have been sporadic attempts by local network managers to crack down on the raunchier discussion groups, but as Internet pioneer John Gilmore puts it, \textbf{"The Net interprets censorship as damage and routes around it."}\\~\\
@@ -80,36 +81,46 @@
 \end{frame}
 
 \begin{frame}{"If you want to liberate a society, all you need is the Internet." - \textbf{Wael Ghonim}}
-    %TODO image of protests on square
+    \includegraphics[width=\textwidth]{protest}
 \end{frame}
 
 \begin{frame}{Technology to Organize and Protest?}
-    %TODO image percent of population using internet
+    \includegraphics[width=\textwidth]{percent-using-internet}
 \end{frame}
 
 \begin{frame}{The Anarchist Ideal Conflicts with the Centralized Reality}
-    %TODO map of internet cables
+    \includegraphics[width=\textwidth]{internet-cable-map}
 \end{frame}
 
 \begin{frame}{“I once said, if you want to liberate a society, all you need is the Internet. I was wrong.” - Wael Ghonim}
     \begin{columns}
         \column{0.5\textwidth}
-            %TODO Egypt Tracking via Apps
+            \includegraphics[width=\textwidth]{egypt-tracking-citizens}
         \column{0.5\textwidth}
-            %TODO riskiq namecheap check image
-            \href{Check Point Research}{https://research.checkpoint.com/2019/the-eye-on-the-nile/}
+            \includegraphics[width=\textwidth]{egypt-tracking-evidence}
+            \href{https://research.checkpoint.com/2019/the-eye-on-the-nile/}{Check Point Research}
     \end{columns}
 \end{frame}
 
-\begin{frame}{Terminology}%TODO emoji
-    \Large{Surveillance}\\
-    \textit{The act of observing persons or groups either with notice or their knowledge (overt surveillance) or without their knowledge (covert surveillance).}\\~\\
-    
-    \Large{Censorship}\\
-    \textit{The suppression of words, images, or ideas that are “offensive” whenever some succeed in imposing their personal political or moral values on others. Censorship by the government is unconstitutional.}
-
-    \scriptsize
-    \href{Cornell Law, }{https://www.law.cornell.edu/wex/surveillance}\href{ACLU}{https://www.aclu.org/other/what-censorship}
+\begin{frame}{Terminology}
+    \begin{columns}[T]
+        \column{0.9\textwidth}
+            Surveillance\\
+            \small{\textit{The act of observing persons or groups either with notice or their knowledge (overt surveillance) or without their knowledge (covert surveillance).}}\\~\\
+        \column{0.1\textwidth}
+            \includegraphics[width=\textwidth]{eyes}
+    \end{columns}
+    \vspace{0.05\textheight}
+    \begin{columns}[T]
+        \column{0.9\textwidth}            
+            Censorship\\
+            \small{\textit{The suppression of words, images, or ideas that are “offensive” whenever some succeed in imposing their personal political or moral values on others. Censorship by the government is unconstitutional.}}\\~\\
+        
+            \scriptsize
+            \href{https://www.law.cornell.edu/wex/surveillance}{Cornell Law, }\href{https://www.aclu.org/other/what-censorship}{ACLU}
+        \column{0.1\textwidth}
+            \includegraphics[width=\textwidth]{zipped}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Categories of Government Surveillance}
@@ -124,7 +135,7 @@
 
 \begin{frame}{}
     \thispagestyle{empty}
-    %TODO 4th Amendment photo
+    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth]{4th-amendment}}%TODO3 alignment
 \end{frame}
 
 \begin{frame}{The Fourth Amendment}
@@ -144,11 +155,13 @@
             \item Amended the Wiretap Act (now Title I of ECPA) -- extended it to include transmissions of electronic data via computers. 18 U.S.C. § 2510 \textit{et seq.}
             \item Added the Stored Communications Act (Title II of ECPA) -- applies to stored electronic communications. 18 U.S.C. § 2701 \textit{et seq.}
             \item Added the Pen Register Statute (Title III of ECPA). 18 U.S.C. § 3121 \textit{et seq.}
+            \begin{wrapfigure}{L}{0.2\textwidth}
+                \includegraphics[width=0.18\textwidth]{old-computer}
+            \end{wrapfigure} %TODO3 get it to wrap around bullet points?
         \end{itemize}
-
+        
         \item Remember: 4A is a \textit{floor}; Congress can and does pass laws that provide \textit{more} protection than the courts say the 4A provides.
     \end{itemize}
-    %TODO 80s computer image?
 \end{frame}
 
 \begin{frame}{ECPA Definitions}
@@ -173,28 +186,28 @@
 \end{frame}
 
 \begin{frame}{SCA: Who + What + How}
-    %TODO SCA table
+    \includegraphics[width=\textwidth]{sca-table}
     \tiny
     Source: adapted from Perkins Cole
 \end{frame}
 
 \begin{frame}{}
     \thispagestyle{empty}
-    %TODO Facebook Twitter withholding evidence of innocence
+    \AddToShipoutPictureBG*{\includegraphics[height=\paperheight]{exonerating-evidence}}%TODO3 image alignment
 \end{frame}
 
 \begin{frame}{FISA and FAA}
-    %TODO nixon resignation address
+    \includegraphics[width=\textwidth]{nixon-resignation}
 \end{frame}
 
 \begin{frame}{FISA and FAA}
-    %TODO FISA and FAA flowchart
+    \includegraphics[width=\textwidth]{section-702-flowchart}
     \tiny
     \url{https://www.thirdway.org/report/guide-to-section-702-reform}
 \end{frame}
 
 \begin{frame}{How About Outside of the US?}
-    %TODO government data requests graph
+    %TODO2 government data requests graph - there are two of them for some reason???
     \tiny
     \url{https://transparency.facebook.com/government-data-requests}
 \end{frame}
@@ -202,64 +215,110 @@
 \section{Targeted Surveillance}
 
 \begin{frame}{A Controversial TOR Takedown: Playpen}
-    %TODO 2 images of Playpen news
+    \begin{columns}
+        \column{0.4\textwidth}
+            \includegraphics[width=1.5\textwidth]{playpen-article}
+        \column{0.6\textwidth}
+            \includegraphics[width=\textwidth]{playpen-court-article}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Commercial Hacking}
     \begin{columns}
-        \column{0.8\textwidth}
-            %TODO PSS commercial hacking
-        \column{0.2\textwidth}
-            %TODO TESTBOT1 Image
+        \column{0.7\textwidth}
+            \includegraphics[width=\textwidth]{pss-commercial-hacking}
+        \column{0.3\textwidth}
+            \includegraphics[width=\textwidth]{testbot1}
     \end{columns}
     \tiny
     \url{https://citizenlab.ca/2017/12/champing-cyberbit-ethiopian-dissidents-targeted-commercial-spyware/}
 \end{frame}
 
 \begin{frame}{Surveillance and Malware Meet: NSO Group}
-    %TODO suspected pegasus infections
+    \includegraphics[width=\textwidth]{pegasus-infection-map}
 \end{frame}
 
 \begin{frame}{WhatsApp vs. NSO Group}
     \begin{columns}
-        \column{0.4\textwidth}
-            %TODO whatsapp vs nso lawsuit
-        \column{0.6\textwidth}
-            %TODO NSO group linkedin rant
+        \column{0.45\textwidth}
+            \includegraphics[width=\textwidth]{whatsapp-vs-nso-court-doc}
+        \column{0.55\textwidth}
+            \includegraphics[width=\textwidth]{nso-rant}
     \end{columns}
 \end{frame}
 
 \begin{frame}{Anybody Can Be a Target}
     \begin{columns}
         \column{0.7\textwidth}
-            %TODO Project Cato summary
+            \includegraphics[width=\textwidth]{project-cato-executive-summary}
         \column{0.3\textwidth}
-            %TODO project cato photos
+            \includegraphics[width=\textwidth]{project-cato-photos}
     \end{columns}
 \end{frame}
 
 \section{Mass Surveillance}
 
 \begin{frame}{}
-    %TODO prism slide 1
+    \thispagestyle{empty}
+    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth]{prism1}}
 \end{frame}
 
 \begin{frame}{}
-    %TODO prism slide 2
+    \thispagestyle{empty}
+    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth]{prism2}}
 \end{frame}
 
 \begin{frame}{}
-    %TODO data tapping closet thing
+    \thispagestyle{empty}
+    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth]{room-641a}}
 \end{frame}
 
 \begin{frame}{}
-    %TODO Prism Yahoo Webmessenger
+    \thispagestyle{empty}
+    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth]{prism-yahoo-webmessenger}}
 \end{frame}
 
 \section{Censorship}
 
 \begin{frame}{There Are Also Countries With Excellent Blocking Capabilities}
-    %TODO diagram of china
+    \includegraphics[width=\textwidth]{china-blocking-diagram}
+\end{frame}
+
+\begin{frame}{One of the Solutions Has Been the VPN}
+    \includegraphics[width=\textwidth]{vpn-solution}
+\end{frame}
+
+\begin{frame}{Enter The Onion Router}
+    \includegraphics[width=\textwidth]{tor}
+\end{frame}
+
+\begin{frame}{How Does Tor Work?}
+    \includegraphics[width=\textwidth]{how-tor-works}
+\end{frame}
+
+\begin{frame}{Weaknesses in Tor}
+    \includegraphics[width=\textwidth]{tor-weaknesses}
+\end{frame}
+
+\begin{frame}{TOR Is in an Arms Race with the PRC}
+    \includegraphics[width=\textwidth]{china-firewall-race}
+    \tiny{\href{https://blog.thousandeyes.com/the-war-between-chinas-great-firewall-and-circumvention-tools/}{blog.thousandeyes.com/the-war-between-chinas-great-firewall-and-circumvention-tools/}}
+\end{frame}
+
+\begin{frame}{PRC Detection of Tor}
+    \includegraphics[width=\textwidth]{prc-tor-detection}
+\end{frame}
+
+\begin{frame}{.onion Services}%TODO2 something seems to be missing/arrows seem to be wrong
+    \includegraphics[width=\textwidth]{onion-services}
+\end{frame}
+
+\begin{frame}{The Site That Made the Dark Web Famous:}
+    \includegraphics[width=\textwidth]{silkroad}
+\end{frame}
+
+\begin{frame}{The Site That Made the Dark Web Famous:}
+    \includegraphics[width=\textwidth]{silkroad-seized}
 \end{frame}
 
 \begin{frame}{How Do Countries Block?}
@@ -268,38 +327,39 @@
             \begin{enumerate}
                 \item By DNS name
                 \begin{enumerate}
-                    \item Defeated by alternative DNS, VPN
+                    \item \small{Defeated by alternative DNS, VPN}
                 \end{enumerate}
         
                 \item By IP address
                 \begin{enumerate}
-                    \item Defeated by domain fronting, cloud CDNs, VPN
+                    \item \small{Defeated by domain fronting, cloud CDNs, VPN}
                 \end{enumerate}
         
                 \item By SNI sniffing
                 \begin{enumerate}
-                    \item Addressed by TLS 1.3, VPN
+                    \item \small{Addressed by TLS 1.3, VPN}
                 \end{enumerate}
         
                 \item Full Internet shutdowns
             \end{enumerate}
         \column{0.5\textwidth}
-        %TODO iran internet shutdown
+            \includegraphics[width=\textwidth]{iran-internet-shutdown-2019}
     \end{columns}
 \end{frame}
 
 \begin{frame}{Internet Shutdowns Are on the Rise}
-    In 2019, the \#KeepItOn Coalition recorded \textbf{213 incidents} of Internet Shutdowns across \textbf{33 countries.} 
+    \small{In 2019, the \#KeepItOn Coalition recorded \textbf{213 incidents} of Internet Shutdowns across \textbf{33 countries.}}
     \begin{columns}
         \column{0.5\textwidth}
-            %TODO 2 images; uganda internet shutdown + guinea election tweet
+            \includegraphics[width=\textwidth]{unganda-internet-shutdown}
+            \includegraphics[width=\textwidth]{guinea-internet-disruptions}
         \column{0.5\textwidth}
-            %TODO Justifications for shutdowns images
+            \includegraphics[width=\textwidth]{shutdown-justifications}
     \end{columns}
 \end{frame}
 
 \begin{frame}{Surveillance/Censorship Capabilities by Country Category}
-    \footnotesize %TODO table
+    \footnotesize %TODO3 table formatting
     \begin{tabularx}{\textwidth}{|X|X|X|X|}
         \hline
         \textbf{Country Category} & \textbf{Surveillance Capabilities} & \textbf{Censorship Capabilities} & \textbf{Possible Constraints}\\
@@ -314,8 +374,12 @@
 \end{frame}
 
 \begin{frame}{Domestic Surveillance}
+    \centering
     \textit{Or where we start making you paranoid….}
-    %TODO Americans movie poster
+    \begin{figure}
+        \centering
+        \includegraphics[height=0.6\textheight]{americans-poster}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Domestic Abusers Are the Hardest Adversary}
@@ -334,12 +398,13 @@
                 \item Other forms of legal/financial leverage
             \end{enumerate}
         \column{0.4\textwidth}
-            %TODO security camera footage
+            \includegraphics[width=\textwidth]{security-cameras}
     \end{columns}
 \end{frame}
 
 \begin{frame}{Possible Response: The "Break Up" Flow}
-    %TODO Facebook 
+    \centering
+    \includegraphics[height=\textheight]{breakup-flow}
 \end{frame}
 
 \begin{frame}{"Legitimate" Spyware}
@@ -358,19 +423,30 @@
                 \item Exploiting shared passwords to view private communications
             \end{itemize}
     \end{columns}
-    %TODO kidguard find my phone spyzie mspy
+    \vspace{0.1\textheight}
+    \begin{columns}
+        \column{0.3\textwidth}
+            \includegraphics[width=\textwidth]{kidguard}
+        \column{0.2\textwidth}
+            \includegraphics[width=\textwidth]{find-my-phone}
+        \column{0.3\textwidth}
+            \includegraphics[width=\textwidth]{spyzie}
+        \column{0.2\textwidth}
+            \includegraphics[width=\textwidth]{mspy}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Smart Home: Convenience or Abuse?}
-    %TODO smart home image
+    \includegraphics[width=\textwidth]{smart-home}
 \end{frame}
 
 \begin{frame}{Apple Made Stalking Tools Pretty With a Better UX}
     \begin{columns}
-        \column{0.4\textwidth}
-            %TODO Apple Stalking Headline
-        \column{0.6\textwidth}
-            %TODO Aplle Stalking Article
+        \column{0.45\textwidth}
+            \includegraphics[width=\textwidth]{airtags-nyt-headline}
+            \includegraphics[width=\textwidth]{airtags}
+        \column{0.55\textwidth}
+            \includegraphics[width=\textwidth]{airtags-nyt-article}
     \end{columns}
 \end{frame}
 
@@ -389,23 +465,23 @@
 \end{frame}
 
 \begin{frame}{Public: Wassenaar and Other Attempts to Regulate Spyware}
-    \textbf{1996 Wassennaar Arrangement} - the first global multilateral arrangement on export controls for conventional weapons and sensitive dual-use goods and technologies. \textbf{Revised in 2013 to include internet-based surveillance systems.}\\
+    \textbf{1996 Wassennaar Arrangement} - the first global multilateral arrangement on export controls for conventional weapons and sensitive dual-use goods and technologies. \textbf{Revised in 2013 to include internet-based surveillance systems.}\\~\\
     \footnotesize
-    \href{wassenaar.org}{https://www.wassenaar.org/the-wassenaar-arrangement/}
+    \href{https://www.wassenaar.org/the-wassenaar-arrangement/}{wassenaar.org}
     \begin{columns}
         \column{0.5\textwidth}
-            %TODO wassenaar arrengments
+            \includegraphics[width=\textwidth]{wassenaar-overview}
         \column{0.5\textwidth}
-            %TODO wassenaar signatories
+            \includegraphics[width=\textwidth]{wassenaar-signatories}
     \end{columns}
 \end{frame}
 
 \begin{frame}{Restricts Sale and Distribution of Surveillance Tools to Oppressive Regimes}
-    %TODO Wassenaar Licensing Factors
+    \includegraphics[width=\textwidth]{wassenaar-licensing-factors}
 \end{frame}
 
 \begin{frame}{Unintended Consequences of the Wassenaar Arrangement}
-    %TODO Wired Wassenaar
+    \includegraphics[width=\textwidth]{wired-arms-control}
     \begin{itemize}
         \item Rules so broad could criminalize some research, bug bounty programs, and penetration testing and restrict legitimate security tools 
         \item Some argued the restrictions weakened security of participating nations and did little to curb threats from non-participant nations
@@ -414,11 +490,11 @@
 \end{frame}
 
 \begin{frame}{Al Jazeera Investigation Shows Spyware Firms Breach Agreements}
-    %TODO embed video link
+    %TODO2 embed video link so the time limit is transferred
 \end{frame}
 
 \begin{frame}{Private Action: WhatsApp vs. NSO }
-    %TODO whatsapp vs NSO techcrunch
+    \includegraphics[width=\textwidth]{nso-whatsapp}
 \end{frame}
 
 \begin{frame}{Product/Technical Responses}
@@ -430,42 +506,13 @@
     \end{enumerate}
 \end{frame}
 
-%TODO3 are these slides in the right place
-\begin{frame}{One of the Solutions Has Been the VPN}
-    %TODO
-\end{frame}
-
-\begin{frame}{Enter The Onion Router}
-    %TODO
-\end{frame}
-
-\begin{frame}{How Does Tor Work?}
-    %TODO
-\end{frame}
-
-\begin{frame}{Weaknesses in Tor}
-    %TODO
-\end{frame}
-
-\begin{frame}{TOR Is in an Arms Race with the PRC}
-    %TODO
-    \url{https://blog.thousandeyes.com/the-war-between-chinas-great-firewall-and-circumvention-tools/}
-\end{frame}
-
-\begin{frame}{PRC Detection of Tor}
-    %TODO
-\end{frame}
-
-\begin{frame}{.onion Services}
-    %TODO
-\end{frame}
-
-\begin{frame}{The Site That Made the Dark Web Famous:}
-    %TODO
-\end{frame}
-
 \begin{frame}{Government Attacks on E2EE}
-    %TODO
+    \begin{columns}
+        \column{0.45\textwidth}
+            \includegraphics[width=\textwidth]{earn-it-wired}
+        \column{0.55\textwidth}
+            \includegraphics[width=\textwidth]{encryption-meeting-follow-up}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Where Is This Going?}
