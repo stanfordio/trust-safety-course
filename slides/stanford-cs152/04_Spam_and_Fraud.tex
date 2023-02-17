@@ -57,11 +57,15 @@
     Some of the basic techniques for spam fighting
 \end{frame}
 
-\begin{frame}{}%TODO3 Spam Spam Spam gif - need animate package(?)
+\begin{frame}{}%TODO3 Spam Spam Spam gif - how do I make this work
     \thispagestyle{empty}
+    \graphicspath{{img/lesson04/spamgif}}
+    \animategraphics[autoplay, width=\textwidth]{10}{spam-}{1}{82}
 \end{frame}
 
 \section{What is Spam?}
+
+\graphicspath{{img/lesson04}}%TODO remove?
 
 \begin{frame}{What is Spam?}
     \scriptsize
@@ -84,7 +88,7 @@
 \begin{frame}{Primary Purpose of Most Spam}
     \begin{columns}
         \column{0.6\textwidth}
-            Deliver information that contains a payload\\
+            Deliver information that contains a payload\\~\\
             Payload can be:\\
             \begin{itemize}
                 \item Advertising for a product
@@ -92,7 +96,8 @@
                 \item Phishing site
                 \item Computer malware
             \end{itemize}
-            %TODO3 google slides figure
+            \vspace{0.1\textheight}
+            \includegraphics[width=\textwidth]{spam-diagram}
         \column{0.4\textwidth}
             \begin{figure}
                 \centering
@@ -119,10 +124,6 @@
 \end{frame}
 
 \section{A Brief History of Spam and Fraud}
-\begin{frame}{}
-    %TODO2 red slide
-    A Brief History of Spam and Fraud
-\end{frame}
 
 \begin{frame}{History of Spam}
     \scriptsize
@@ -307,7 +308,7 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{}%TODO2 blank slide
+\begin{frame}{}%TODO2 Make text fill entire slide
     \thispagestyle{empty}
     \footnotesize
     You don’t know me and you’re thinking why you received this email, right?\\
@@ -359,11 +360,6 @@
 
 \section{Responses and Mitigations}
 
-\begin{frame}{}
-    Responses and Mitigations
-    %TODO2 red slide
-\end{frame}
-
 \begin{frame}{Policy Responses}
     \begin{itemize}
         \item Identify how spammers use your products
@@ -413,12 +409,15 @@
             \begin{figure}
                 \includegraphics[width=0.6\textwidth]{viagra}
             \end{figure}
-    \end{columns}\\~\\
-    %TODO3 bigger space btwn examples
+    \end{columns}
     \centering
-    \textit{\textbf{Can your algorithm catch this?} \\~\\
-    v*i*a_g*r*a     vi(@)gr@		V|i|a|g|r|a	  \textbackslash/¡å9®á		viiagra\\~\\
-    (there are over $10^{21}$ ways to spell viagra)}
+    \textit{\textbf{Can your algorithm catch this?}} \\~\\
+    v*i*a_g*r*a \hspace{0.04\textwidth}
+    vi(@)gr@ \hspace{0.04\textwidth}
+    V|i|a|g|r|a \hspace{0.04\textwidth}
+    \textbackslash/¡å9®á \hspace{0.04\textwidth}
+    viiagra\\~\\
+    \textit{(there are over $10^{21}$ ways to spell viagra)}
 \end{frame}
 
 \begin{frame}{Block Keywords}
@@ -441,7 +440,15 @@
 \end{frame}
 
 \begin{frame}{Charge Money for Sending Email}
-    %TODO3 table
+    \begin{tabularx}{\textwidth}{|X|X|X|}
+        \hline
+         & People who will pay & People who won’t pay \\
+        \hline
+        People you want to hear from & \includegraphics[width=0.3\textwidth]{marriot-bonvoy} & \includegraphics[width=0.3\textwidth]{google-careers} \\
+        \hline
+        People you don’t want to hear from & \includegraphics[width=0.3\textwidth]{sussy-canada} & \adjincludegraphics[trim= 0 {0.55\height} 0 0, clip, width=0.3\textwidth]{the-ex} \\
+        \hline
+    \end{tabularx}
 \end{frame}
 
 \begin{frame}{What About a 95\% Accurate Solution?}
@@ -459,6 +466,7 @@
 
 \begin{frame}{Spam is not a mosquito problem; it’s a squirrel problem}
     %TODO3 birdfeeder gif - need animate package
+    %\animategraphics{60}{squirrel}{}{}
     (this is a squirrel proof birdfeeder)
 \end{frame}
 
@@ -492,7 +500,7 @@
 \end{frame}
 
 \begin{frame}{How Email Works}
-    %TODO3 diagram
+    \includegraphics[width=\textwidth]{how-email-works}
 \end{frame}
 
 \begin{frame}{What is an RFC?}
@@ -586,10 +594,6 @@
 \end{frame}
 
 \section{Fighting Spam with Machine Learning}
-
-\begin{frame}{} %TODO2 red slide
-    Fighting Spam with Machine Learning
-\end{frame}
 
 \begin{frame}{Spam Filtering Techniques}
     \begin{figure}

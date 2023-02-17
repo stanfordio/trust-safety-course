@@ -36,18 +36,20 @@
     \titlepage
 \end{frame}
 
-%TODO sections
-
 \begin{frame}{Twitter Hack}
     \includegraphics[width=\textwidth]{thanks-obama}
 \end{frame}
 
+%TODO OVERVIEW
+%TODO2 questions for Alex
+%TODO3 image formatting/sizing questions
+
 \section{What Will You Learn Today?}
 
-\begin{frame}{What Will You Learn Today?}%TODO consistent sizing + formatting for overview pages
-    \large
+\begin{frame}{What Will You Learn Today?}
+    \Large
     \begin{itemize}
-        \item Digital identity relationships
+        \item Digital Identity Relationships
         \item Basic and Advanced Authentication Flows
         \item Threats to Authentication
         \item Defense Against the Dark Arts
@@ -127,14 +129,14 @@
 \end{frame}
 
 \begin{frame}{Why Should I Care?}
-    There are multiple levels of identity online and strong authentication is essential for them all. \\
+    There are multiple levels of identity online and strong authentication is essential for them all.\\~\\
     Protecting users while maintaining availability requires a complex web of systems covering Prevention, Detection, and Mitigation.
 \end{frame}
 
 \section{Authentication}
 
 \begin{frame}{Authn vs Authz}
-    \Large
+    \large
     \textbf{Authentication (authn)} - Whether users are who they claim to be\\~\\
     \textbf{Authorization (authz)} - What users are and aren’t allowed to access
 \end{frame}
@@ -147,12 +149,12 @@
     \includegraphics[width=\textwidth]{auth}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{}%TODO3 alignment
     \thispagestyle{empty}
     \includegraphics[width=\paperwidth]{stanford-forgot-password}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{}%TODO3 alignment
     \thispagestyle{empty}
     \includegraphics[width=\paperwidth]{stanford-id-verification}
 \end{frame}
@@ -161,7 +163,7 @@
     \includegraphics[width=\textwidth]{multifactor-auth}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{}%TODO3 alignment
     \centering
     \thispagestyle{empty}
     \includegraphics[height=\textheight]{google-2fa}
@@ -201,26 +203,34 @@
     \includegraphics[width=\textwidth]{quota-inversion-2}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{}%TODO3 clear format?; sizing?
     \centering
     \includegraphics[height=\paperheight]{have-i-been-pwned}
 \end{frame}
 
-\begin{frame}{}%TODO crop
+\begin{frame}{}
     \thispagestyle{empty}
-    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth]{predator13}}
+    \AddToShipoutPictureBG*{\adjincludegraphics[trim=0 {0.36\height} 0 0, clip, width=\paperwidth]{predator13}}
 \end{frame}
 
 \begin{frame}{}
-    %TODO 4 emails
+    \thispagestyle{empty}
+    \begin{columns}
+        \column{0.45\textwidth}
+            \includegraphics[width=\textwidth]{susmail1}
+            \includegraphics[width=\textwidth]{susmail3}
+        \column{0.45\textwidth}
+            \includegraphics[width=\textwidth]{susmail2}
+            \includegraphics[width=\textwidth]{susmail4}
+    \end{columns}
 \end{frame}
 
-\begin{frame}{}%TODO
+\begin{frame}{}%TODO3
     \thispagestyle{empty}
     \includegraphics[width=\paperwidth]{anatomy-of-phishing-mail}
 \end{frame}
 
-\begin{frame}{}%TODO
+\begin{frame}{}%TODO3
     \thispagestyle{empty}
     \includegraphics[width=\paperwidth]{login-diagram}
 \end{frame}
@@ -230,17 +240,17 @@
     \includegraphics[width=\paperwidth]{login-diagram-phishing}
 \end{frame}
 
-\begin{frame}{}%TODO
+\begin{frame}{}%TODO3
     \thispagestyle{empty}
     \includegraphics[width=\paperwidth]{bad-link-browser}
 \end{frame}
 
-\begin{frame}{}%TODO2 fix
+\begin{frame}{}%TODO3 fix
     \thispagestyle{empty}
     \includegraphics[height=\paperheight]{bad-link-mobile}
 \end{frame}
 
-\begin{frame}{}%TODO2 fix - AtPageUpperLeft not doing what eso-pic says it does
+\begin{frame}{}%TODO3 fix - AtPageUpperLeft not doing what eso-pic says it does
     \thispagestyle{empty}
     \includegraphics[width=\paperwidth]{evilginx}
 \end{frame}
@@ -249,10 +259,12 @@
 
 \begin{frame}{Mitigation}
     \Large
-    Risk-based authentication challenges\\~\\
-    Implicit signals\\~\\
-    Strong authentication\\~\\
-    Federation
+    \begin{itemize}
+        \item Risk-based authentication challenges
+        \item Implicit signals
+        \item Strong authentication
+        \item Federation
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Sign-in Risk Detection}
@@ -290,16 +302,16 @@
 
 \begin{frame}{Authentication Beyond Passwords}
     \centering
-    \includegraphics[height=\textheight]{stanford-2fa}
-\end{frame}
-
-\begin{frame}{}%TODO scaling
-    \thispagestyle{empty}
-    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth]{auth-key}}
+    \includegraphics[height=0.86\textheight]{stanford-2fa}
 \end{frame}
 
 \begin{frame}{}
-    %TODO how to implement w/ or w/o animation
+    \thispagestyle{empty}
+    \AddToShipoutPictureBG*{\includegraphics[trim=300 0 0 0, clip, height=\paperheight]{auth-key}}
+\end{frame}
+
+\begin{frame}{}
+    %TODO2 how to implement w/ or w/o animation
 \end{frame}
 
 \begin{frame}{Identity Federation}
@@ -313,7 +325,7 @@
 \section{Exotic Attacks}
 
 \begin{frame}{Exotic Attacks}
-    \LARGE
+    \Large
     \begin{itemize}
         \item OAuth Phishing
         \item Token Theft
@@ -324,13 +336,13 @@
     \includegraphics[width=\textwidth]{oauth}
 \end{frame}
 
-\begin{frame}{}%TODO HOW DO YOU CENTER THIS AAAAAAAA
+\begin{frame}{}%TODO3 HOW DO YOU CENTER THIS AAAAAAAA
     \thispagestyle{empty}
     \centering
     \includegraphics[width=\textwidth]{phishy}
 \end{frame}
 
-\begin{frame}{}%TODO cursed alignment
+\begin{frame}{}%TODO3 cursed alignment
     \thispagestyle{empty}
     \includegraphics[height=\paperheight]{google-docs-permissions}
 \end{frame}
