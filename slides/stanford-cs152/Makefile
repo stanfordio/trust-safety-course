@@ -1,7 +1,6 @@
-
-all: $(wildcard ??_*.tex)
-		latexmk -pdflatex=lualatex -pdf $?
-		mv *.pdf pdf/
+all: 
+	$(foreach file, $(wildcard *.tex), latexmk -pdflatex=lualatex -pdf $(file);)
+	mv *.pdf pdf/
 
 crunch:
 	mkdir -p img-orig
