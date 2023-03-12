@@ -1,0 +1,278 @@
+%! TEX program = LuaTeX
+
+\documentclass[nobackground,dvipsnames,table,aspectratio=169]{beamer}
+\usepackage{cs152}
+
+\mode<presentation>
+{\usetheme{Hannover}
+    \usecolortheme{cs152}
+    \setbeamercovered{transparent}
+    \useinnertheme[shadow=false]{rounded}
+    \usebackgroundtemplate{}
+    \setbeamercolor*{frametitle}{parent=palette primary}
+    \setbeamerfont{block title}{size={}}
+    \setbeamertemplate{navigation symbols}{}
+}
+
+\title{Emerging Issues and Career Advice}
+\subtitle{CS 152 --- Lecture 14}
+
+\author[A. Stamos]{Alex Stamos}
+\institute[Stanford University]{Stanford Cyber Policy Center}
+\date[2022]{\today}
+\subject{CS 152 --- Trust and Safety Engineering}
+%\titlegraphic{\includegraphics[width=5cm]{img/cyber-logo-white-black-red-WEB}}
+
+% Change the level of bulleting on the ToC page
+\setcounter{tocdepth}{2}
+
+\graphicspath{{img/lesson14}}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\section{Emerging Issues}
+
+\begin{frame}{The Rise of Chinese Platforms}
+    \centering
+    \includegraphics[width=0.9\textwidth]{rise-of-chinese-platforms}
+    \underline{\url{https://en.wikipedia.org/wiki/List_of_largest_Internet_companies}}
+\end{frame}
+
+\begin{frame}{TikTok at the Forefront}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \includegraphics[width=0.95\textwidth]{tiktok-ban-reversal-nyt}
+        \column{0.5\textwidth}
+            PRC based companies:
+            \begin{itemize}
+                \item Have to deal with political content moderation requirements
+                \item Have less experience in safety issues common in West
+                \item Are not experienced with Western privacy laws
+                \item Might store data in the PRC
+                \item Could decide to not follow ECPA
+                \item Issues with transparency
+            \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \includegraphics[width=\textwidth]{tiktok-misinfo}
+        \column{0.5\textwidth}
+            \includegraphics[width=\textwidth]{tiktok-ukraine-nyt}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Emerging: Short Video, Realtime Audio/Video}
+    \begin{columns}
+        \column{0.15\textwidth}
+            \includegraphics[width=\textwidth]{tiktok-logo}
+            \includegraphics[width=\textwidth]{instagram-reels}
+        \column{0.65\textwidth}
+            \includegraphics[width=0.5\textwidth]{clubhouse}
+            \includegraphics[width=\textwidth]{twitch}
+        \column{0.2\textwidth}
+            \includegraphics[width=\textwidth]{listening-party}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{}
+    \centering
+    \href{https://youtu.be/wq-kmFCrF5Q}{\includegraphics[width=0.8\textwidth]{deepfake-tom-cruise}}
+\end{frame}
+
+\begin{frame}{Synthetic Faces}
+    \centering
+    \includegraphics[width=0.9\textwidth]{synthetic-faces}
+\end{frame}
+
+\begin{frame}{But How Useful Is Synthetic Media in Abuse?}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \includegraphics[width=\textwidth]{sanders-nyt}
+        \column{0.5\textwidth}
+            Types of abuse where falsity isn’t relevant to impact:
+            \begin{itemize}
+                \item Fake accounts
+                \item Sextortion
+                \item Harassment
+                \item Spam
+                \item Hate speech
+                \item NCII
+            \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Initial Stats Show a Trend Towards Gendered Individual Abuse}
+    \begin{columns}
+        \column{0.3\textwidth}
+            \includegraphics[width=0.95\textwidth]{deepfake-stats}
+        \column{0.7\textwidth}
+            \includegraphics[width=\textwidth]{deepfake-abuse}
+    \end{columns}
+    \small
+    \underline{\url{https://regmedia.co.uk/2019/10/08/deepfake_report.pdf}}
+\end{frame}
+
+\begin{frame}{Everything Needs To Be Moderated!}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \includegraphics[width=\textwidth]{podcast-disaster-article}
+        \column{0.5\textwidth}
+            \centering
+            \includegraphics[width=0.5\textwidth]{operation-open-house}
+            \includegraphics[width=\textwidth]{operation-open-house-apps}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{}
+    \thispagestyle{empty}
+    \AddToShipoutPictureBG*{\adjincludegraphics[trim=0 {0.3\height} 0 0, clip, width=\paperwidth]{metaverse}}
+\end{frame}
+
+\begin{frame}{Not Enough Skilled People!}
+    \centering
+    \includegraphics[height=0.7\textheight]{cybersec-in-demand}
+    \scriptsize
+    \underline{\url{https://www.cyberseek.org/heatmap.html}}
+\end{frame}
+
+\begin{frame}{Encryption Is the Next Battleground}
+    \begin{columns}
+        \column{0.6\textwidth}
+            \includegraphics[width=\textwidth]{encryption-battleground-nyt}
+        \column{0.4\textwidth}
+            \includegraphics[width=\textwidth]{encryption-battleground-earn-it}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Europe Close to Regulating Many Aspects of T\&S}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \includegraphics[width=\textwidth]{europe-tns-regulation}
+            \small
+            'When the European Parliament and the council vote to soften the responsibility of major digital players and weaken the ability of rights holders to appeal against their pirated content, how are we to understand this?'
+        \column{0.4\textwidth}
+            \includegraphics[width=\textwidth]{europe-tns-regulation-open-letter}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Crypto + Web3}
+    \includegraphics[width=\textwidth]{web3}
+    \begin{itemize}
+        \item Fundamental model of no central authority and self-protection brings back the wild west
+        \item Massive growth in TAM for commercial hacking
+        \item Makes money laundering a technical enterprise
+        \item Facilitates ransom payments by companies and individuals
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{If you enjoyed this class...}
+    \includegraphics[width=\textwidth]{sio-opportunities}
+    \underline{\url{https://cyber.fsi.stanford.edu/io/content/opportunities}}
+\end{frame}
+
+\section{Uncle Alex's Career Advice}
+
+\begin{frame}{Uncle Alex's Career Advice}
+    \begin{enumerate}
+        \item Always put yourself in a position to learn and grow. Comfort == decay
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Uncle Alex's Career Advice}
+    \begin{enumerate}
+        \item Always put yourself in a position to learn and grow. Comfort == decay
+        \item Be part of the product, not the plumbing
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Uncle Alex's Career Advice}
+    \begin{enumerate}
+        \item Always put yourself in a position to learn and grow. Comfort == decay
+        \item Be part of the product, not the plumbing
+        \item Take every interview you can
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Uncle Alex's Career Advice}
+    \begin{enumerate}
+        \item Always put yourself in a position to learn and grow. Comfort == decay
+        \item Be part of the product, not the plumbing
+        \item Take every interview you can
+        \item Your point of maximum leverage comes right after you get a job offer
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Uncle Alex's Career Advice}
+    \begin{enumerate}
+        \item Always put yourself in a position to learn and grow. Comfort == decay
+        \item Be part of the product, not the plumbing
+        \item Take every interview you can
+        \item Your point of maximum leverage comes right after you get a job offer
+        \item Understand the Cap Table for any private company
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Uncle Alex's Career Advice}
+    \begin{enumerate}
+        \item Always put yourself in a position to learn and grow. Comfort == decay
+        \item Be part of the product, not the plumbing
+        \item Take every interview you can
+        \item Your point of maximum leverage comes right after you get a job offer
+        \item Understand the Cap Table for any private company
+        \item Execution >> Ideas
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Uncle Alex's Career Advice}
+    \begin{enumerate}
+        \item Always put yourself in a position to learn and grow. Comfort == decay
+        \item Be part of the product, not the plumbing
+        \item Take every interview you can
+        \item Your point of maximum leverage comes right after you get a job offer
+        \item Understand the Cap Table for any private company
+        \item Execution >> Ideas
+        \item Always go into a meeting knowing what you want the outcome to be
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Uncle Alex's Career Advice}
+    \begin{enumerate}
+        \item Always put yourself in a position to learn and grow. Comfort == decay
+        \item Be part of the product, not the plumbing
+        \item Take every interview you can
+        \item Your point of maximum leverage comes right after you get a job offer
+        \item Understand the Cap Table for any private company
+        \item Execution >> Ideas
+        \item Always go into a meeting knowing what you want the outcome to be
+        \item Leadership is about supporting people to be their best and portfolio management
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Uncle Alex's Career Advice}
+    \begin{enumerate}
+        \item Always put yourself in a position to learn and grow. Comfort == decay
+        \item Be part of the product, not the plumbing
+        \item Take every interview you can
+        \item Your point of maximum leverage comes right after you get a job offer
+        \item Understand the Cap Table for any private company
+        \item Execution >> Ideas
+        \item Always go into a meeting knowing what you want the outcome to be
+        \item Leadership is about supporting people to be their best and portfolio management
+        \item It’s a small world. Be nice
+    \end{enumerate}
+\end{frame}
+
+\section{Thank you!}
+
+\begin{frame}{}%TODO some kind of end/"yay you made it"?
+    \thispagestyle{empty}
+\end{frame}
+
+\end{document}
